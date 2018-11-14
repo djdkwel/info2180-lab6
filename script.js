@@ -1,12 +1,13 @@
 window.onload = function() {
     var search = document.getElementById("search");
+    var result = document.getElementById("result");
     var httpRequest = new XMLHttpRequest(); 
     var url = "https://info2180-lab6-djdkwel97.c9users.io/request.php?q="
     function doSomething() { 
         if(httpRequest.readyState === XMLHttpRequest.DONE) { 
             if(httpRequest.status === 200) { 
                 var response = httpRequest.responseText; 
-                alert(response); 
+                    result.append(response); 
                 } 
                 else{ 
                     alert('There was a problem with the request.'); 
