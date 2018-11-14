@@ -27,27 +27,7 @@ window.onload = function() {
     
     searchAll.onclick = function(){
     {
-     var defs = xmlObj.getElementsByTagName(&#39;definition&#39;);
-     var list = document.createElement(&#39;ol&#39;);
-     for (let i = 0; i &lt; defs.length; i++) {
-
-    const listItem = document.createElement(&#39;li&#39;);
-
-    const title = defs[i].getAttribute(&#39;name&#39;);
-
-    const author = defs[i].getAttribute(&#39;author&#39;);
-
-    const definition = defs[i].innerHTML;
-
-    listItem.innerHTML=`&lt;h3&gt;${title}&lt;/h3&gt;&lt;p&gt;${definition}&lt;/p&gt;&lt;p&gt;-${author}&lt;/p&gt;`;
-
-    list.appendChild(listItem);
-
-    }
-
-result.appendChild(list);
-
-}
+    
     }
     
     
